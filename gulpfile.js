@@ -71,7 +71,7 @@ function cleanimg() {
 }
 
 function startwatch() {
-  watch(baseDir + '/**/*', {
+  watch(baseDir + "/blocks/**/*",  {
     usePolling: true
   }, styles);
   watch(baseDir + '/original-img/**/*.{' + imageswatch + '}', {
