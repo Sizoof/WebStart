@@ -15,25 +15,25 @@
                     <div class="header__burger__mobile">
                         <img src="/img/header/burger_mobile.svg" alt="menu">
                     </div>
-                    <div class="header-logo">
+                    <a href="../index.html" class="header-logo header-logo__wrap">
                         <div class="header-logo__img">
                             <img src="/img/header/logo.png" alt="logo">
                         </div>
-                        <div class="header-logo__text">Кресла Samurai</div>
-                    </div>
+                        <div class="header-logo__text header-logo__text--color">Кресла Samurai</div>
+                    </a>
                     <div class="header__find">
-                        <input type="text">
+                        <input class="header__input header__input--color" type="text" placeholder="Название модели или артикул">
                     </div>
                     <div class="header__number">
                         <img class="header__number-img" src="/img/header/Calling.svg" alt="call">
-                        <a href="tel:+74952210675" class="header-number-text">+7 495 221-06-75</a>
+                        <a href="tel:+74952210675" class="header__number-text">+7 495 221-06-75</a>
                     </div>
-                    <button type="button" class="button header__button">Заказать звонок</button>
+                    <button type="button" class="button header__button header__button--color">Заказать звонок</button>
                 </div>
                 <div class="header__menu">
                     <div class="header__navigation">
-                        <button type="button" class="header__catalog">
-                            <img src="/img/header/burger.svg" alt="menu">
+                        <button type="button" class="menu header__catalog header__catalog--color header__catalog--size-m">
+                            <img class="menu__img" src="/img/header/burger.svg" alt="menu">
                             <span>Каталог</span>
                         </button>
                         <div class="header__nav">
@@ -44,11 +44,11 @@
                         </div>
                     </div>
                     <div class="header__shop">
-                        <div class="header__rigion">
+                        <div class="header__region">
                             <div class="header__gps">
                                 <img src="/img/header/send.svg" alt="region">
                             </div>
-                            <input type="text" list="citis">
+                            <input class="header__citis" placeholder="Москва" type="text" list="citis">
                             <datalist id="citis">
                                 <option value="Москва"></option>
                                 <option value="Ярославль"></option>
@@ -56,12 +56,12 @@
                                 <option value="Екатеринбург"></option>
                             </datalist>
                         </div>
-                        <div class="header-basket">
+                        <div class="header-basket header-basket__wrap">
                             <div class="header-basket__img">
                                 <img src="/img/header/shopping-cart.svg" alt="cart">
-                                <span class="header-basket__text">Моя корзина</span>
-                                <div class="header-basket__count">+1</div>
                             </div>
+                            <span class="header-basket__text">Моя корзина</span>
+                            <div class="header-basket__count header-basket__count--color">+1</div>
                         </div>
                     </div>
                 </div>
