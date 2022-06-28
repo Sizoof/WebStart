@@ -1,8 +1,12 @@
 .header__button {
   outline: none;
   border: none;
-  font-size: 1.6rem;
-  line-height: 140%;
+  @include font(500, 1.6rem, 140%);
   padding: 1.35rem 2.85rem 1.55rem;
-  cursor: pointer;
+}
+
+@media (max-width: 48em) {
+  .header__button {
+    display: none;
+  }
 }

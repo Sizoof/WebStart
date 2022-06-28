@@ -1,4 +1,9 @@
 .header__number {
-  display: flex;
-  align-items: center;
+  @include vercen ();
+}
+
+@media (max-width: 48em) {
+  .header__number {
+    display: none;
+  }
 }

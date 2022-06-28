@@ -1,6 +1,12 @@
 .header__catalog {
-  display: flex;
-  align-items: center;
+  @include vercen ();
   margin-right: 4.25rem;
   cursor: pointer;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 48em) {
+  .header__catalog {
+    display: none;
+  }
 }

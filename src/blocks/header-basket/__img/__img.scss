@@ -3,3 +3,10 @@
   height: 2rem;
   margin-right: 0.8rem;
 }
+
+@media (max-width: 48em) {
+  .header-basket__img {
+    width: 24px;
+    height: 24px;
+  }
+}

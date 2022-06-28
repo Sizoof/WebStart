@@ -1,3 +1,9 @@
 .header__burger__mobile {
   display: none;
 }
+
+@media (max-width: 48em) {
+  .header__burger__mobile {
+    display: block;
+  }
+}

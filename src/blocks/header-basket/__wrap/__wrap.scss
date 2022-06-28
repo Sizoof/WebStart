@@ -1,5 +1,10 @@
 .header-basket__wrap {
-  display: flex;
-  align-items: center;
+  @include vercen ();
   flex-shrink: 0;
+}
+
+@media (max-width: 48em) {
+  .header-basket__warp {
+    position: absolute;
+  }
 }

@@ -4,3 +4,11 @@
   background: #0074D4;
   border-radius: 2.7rem;
 }
+
+@media (max-width: 48em) {
+  .header-basket__count--color {
+    position: relative;
+    right: 2.4rem;
+    bottom: 1rem;
+  }
+}

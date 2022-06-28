@@ -1,11 +1,13 @@
 .header-logo__text {
-  font-size: 1rem;
-  line-height: 150%;
+  @include font (normal, 1rem, 150%);
   text-align: center;
   text-transform: uppercase;
   margin-top: -0.5rem;
 
-  &--color {
-    color: #959AAE;
+}
+
+@media (max-width: 48em) {
+  .header-logo__text {
+    font-size: 8px;
   }
 }

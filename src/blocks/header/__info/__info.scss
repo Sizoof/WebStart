@@ -1,5 +1,10 @@
 .header__info {
-  display: flex;
-  justify-content: space-between;
+  @include maxWidth();
   margin-bottom: 1.6rem;
+}
+
+@media (max-width: 48em) {
+  .header__info {
+    margin-bottom: 0;
+  }
 }
