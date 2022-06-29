@@ -1,10 +1,10 @@
-.header-basket__wrap {
+.header__basket-wrap {
   @include vercen ();
   flex-shrink: 0;
 }
 
 @media (max-width: 48em) {
   .header-basket__warp {
-    position: absolute;
+    position: relative;
   }
 }

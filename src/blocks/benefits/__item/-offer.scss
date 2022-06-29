@@ -1,0 +1,23 @@
+.benefits__item-offer {
+    @include font (300, 2.2rem, 150%);
+    text-align: center;
+    margin-bottom: 1.3rem;
+    cursor: default;
+}
+
+.benefits__item-span {
+    @include font (600, 2.2rem, 150%);
+}
+
+@media (max-width: 48em) {
+    .benefits__item-offer--br {
+        display: none;
+    }
+    .benefits__item-offer {
+        text-align: left;
+        font-size: 14px;
+    }
+    .benefits__item-span {
+        font-size: 14px;
+    }
+}

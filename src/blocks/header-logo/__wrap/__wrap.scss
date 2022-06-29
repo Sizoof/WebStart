@@ -1,8 +1,9 @@
-.header-logo__wrap {
+.header__logo-wrap {
   width: 18.4rem;
+  padding-top: 0.5rem;
 }
 @media (max-width: 48em) {
-  .header-logo__wrap {
+  .header__logo-wrap {
     width: 100%;
     height: 100%;
   }

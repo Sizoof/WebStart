@@ -1,0 +1,23 @@
+.catalog__card {
+    min-height: 54.5rem;
+    width: 28.1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.catalog__card:hover {
+    border: 1px solid #F3F4F7;
+    box-shadow: 0px 20px 52px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    cursor: pointer;
+    .button__catalog__card {
+        display: block;
+    }
+    transition: 0.2s;
+    width: 33rem;
+    padding: 4.7rem;
+}

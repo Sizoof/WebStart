@@ -1,0 +1,12 @@
+.benefits__item-img {
+    width: 8.8rem;
+    height: 8.8rem;
+}
+
+@media (max-width: 48em) {
+    .benefits__item-img {
+        width: 48px;
+        height: 48px;
+        margin-right: 2rem;
+    }
+  }

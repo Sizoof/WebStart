@@ -1,0 +1,17 @@
+.benefits__item-information {
+    font-family: "Manrope";
+    @include font (400, 1.5rem, 150%);
+    cursor: pointer;
+    text-align: center;
+    &-link {
+        color: #959AAE;
+        border-bottom: 1px dashed #E7EAEF;
+    }
+}
+
+@media (max-width: 48em) {
+    .benefits__item-information {
+        font-size: 13px;
+        margin-bottom: 2.2rem;
+    }
+  }

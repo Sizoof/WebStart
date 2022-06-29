@@ -1,0 +1,14 @@
+.benefits__item-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 48em) {
+    .benefits__item-wrap {
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 2rem;
+    }
+  }

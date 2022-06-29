@@ -1,5 +1,6 @@
 .header__number {
   @include vercen ();
+  padding-right: 1rem;
 }
 
 @media (max-width: 48em) {

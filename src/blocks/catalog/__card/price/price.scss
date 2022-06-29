@@ -1,0 +1,8 @@
+.price__new {
+    @include font (900, 2.8rem, 140%);
+}
+
+.price__old {
+    @include font (700, 2rem, 140%);
+    padding-bottom: 2rem;
+}

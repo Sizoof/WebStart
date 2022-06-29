@@ -1,0 +1,15 @@
+.benefits__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 9.2rem;
+}
+
+@media (max-width: 48em) {
+    .benefits__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 3rem;
+    }
+  }

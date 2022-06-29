@@ -1,4 +1,4 @@
-.header-basket__count--color {
+.header__basket__count-color {
   color: #FFFFFF;
   padding: 0.2rem .6rem;
   background: #0074D4;
@@ -6,9 +6,9 @@
 }
 
 @media (max-width: 48em) {
-  .header-basket__count--color {
-    position: relative;
-    right: 2.4rem;
-    bottom: 1rem;
+  .header__basket__count-color {
+    position: absolute;
+    right: 2.8rem;
+    top: 5.5rem;
   }
 }
