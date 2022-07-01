@@ -73,9 +73,9 @@
         <section class="benefits">
             <div class="container">
                 <div class="benefits__wrap">
-                    <div class="benefits__item">
+                    <div class="benefits__item free__shipping">
                         <div class="benefits__item-img">
-                            <img src="img/benefits/trolley.svg" alt="">
+                            <img class="benefits__trolley-img" src="img/benefits/trolley.svg" alt="">
                         </div>
                         <div class="benefits__item-wrap">
                             <div class="benefits__item-offer"><span class="benefits__item-span">Бесплатная доставка</span> по Москве и Санкт-Петербургу — от 3 шт.</div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__item-img">
-                            <img src="img/benefits/chess.svg" alt="">
+                            <img class="benefits__item-img-chess" src="img/benefits/chess.svg" alt="">
                         </div>
                         <div class="benefits__item-wrap">
                             <div class="benefits__item-offer"><span class="benefits__item-span">Индивидуальные скидки<br class="benefits__item-offer--br"></span> при заказе от 3 шт.</div>
@@ -93,11 +93,10 @@
                     </div>
                     <div class="benefits__item">
                         <div class="benefits__item-img">
-                            <img src="img/benefits/discount.svg" alt="">
+                            <img class="benefits__discount-img" src="img/benefits/discount.svg" alt="">
                         </div>
-                        <div class="benefits__item-wrap">
-                            <div class="benefits__item-offer">Для юридических лиц
-                            действуют <span class="benefits__item-span">особые условия</span></div>
+                        <div class="benefits__item-wrap special__conditions">
+                            <div class="benefits__item-offer">Для юридических лиц<br class="benefits__item-offer--br"> действуют<span class="benefits__item-span">особые условия</span></div>
                             <div class="benefits__item-information"><a href="#" class="benefits__item-information-link">Узнать подробнее</a></div>
                         </div>
                     </div>
@@ -107,18 +106,100 @@
         <section class="catalog">
             <div class="container">
                 <div class="title">
-                    <h2 class="title__document">Каталог кресел</h2>
+                    <h2 class="title__document catalog__title">Каталог кресел</h2>
                 </div>
                 <div class="catalog__wrap">
-                    <div class="catalog__card">
-                        <div class="catalog__card__img-wrap">
-                            <img class="catalog__card__img" src="img/catalog/card.png" alt="card">
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/card.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">23 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
                         </div>
-                        <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
-                        <div class="catalog__card-price price__new">23 000 ₽</div>
-                        <div class="catalog__card-price price__old">27 000 ₽</div>
-                        <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
-                    </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                    <a href="#" class="catalog__card catalog__card__wrapper">
+                        <div class="card__wrap">
+                            <div class="catalog__card__img-wrap">
+                                <img class="catalog__card__img" src="img/catalog/chear.png" alt="card">
+                            </div>
+                            <h3 class="catalog__card__name">Samurai KL-1.04 Темно-коричневый</h3>
+                            <div class="catalog__card-price price__new">24 000 ₽</div>
+                            <div class="catalog__card-price price__old">27 000 ₽</div>
+                            <button class="button button__catalog__card button button__catalog__card--color">Добавить в корзину</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="catalog__button">
+                    <button class="catalog__main__button">Показать все</button>
                 </div>
             </div>
         </section>

@@ -1,3 +1,21 @@
 .catalog__wrap {
     margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 28.1rem);
+    gap: 6.3rem 1.6rem;
+    justify-content: center;
 }
+
+@media (max-width: 960px) {
+    .catalog__wrap {
+        grid-template-columns: repeat(3, 28.1rem);
+    }
+  }
+
+  @media (max-width: 48em) {
+    .catalog__wrap {
+        grid-template-columns: repeat(2, 28.1rem);
+    }
+  }
+
+  

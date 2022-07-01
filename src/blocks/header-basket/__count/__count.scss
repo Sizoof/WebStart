@@ -5,7 +5,8 @@
 @media (max-width: 48em) {
   .header__basket-count {
     font-size: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    @include font (700, 9px, 140%);
+    right: 13px;
+    top: 13px;
   }
 }

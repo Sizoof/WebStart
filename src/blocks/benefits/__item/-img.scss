@@ -1,12 +1,35 @@
 .benefits__item-img {
     width: 8.8rem;
     height: 8.8rem;
+    margin-bottom: 1.7rem;
+}
+
+.benefits__item-img-chess {
+    margin-left: 1rem;
+}
+
+.benefits__trolley-img {
+    margin-left: -1rem;
+}
+
+.benefits__discount-img {
+    margin-left: 0.5rem;
 }
 
 @media (max-width: 48em) {
-    .benefits__item-img {
+    .benefits__trolley-img,
+    .benefits__item-img-chess,
+    .benefits__discount-img
+    {
         width: 48px;
         height: 48px;
-        margin-right: 2rem;
+        margin-left: 0;
     }
+    .benefits__item-img {
+        margin-right: 4rem;
+    }
+    .free__shipping {
+        margin-left: 0;
+    }
+
   }

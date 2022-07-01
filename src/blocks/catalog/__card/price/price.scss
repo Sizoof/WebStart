@@ -1,8 +1,22 @@
 .price__new {
     @include font (900, 2.8rem, 140%);
+    letter-spacing: -0.05em;
 }
 
 .price__old {
     @include font (700, 2rem, 140%);
+    letter-spacing: -0.05em;
     padding-bottom: 2rem;
 }
+
+
+@media (max-width: 48em) {
+    .price__old {
+        letter-spacing: -0.05em;
+        @include font (700, 17px, 140%);
+    }
+    .price__new {
+        @include font (900, 20px, 140%);
+        letter-spacing: -0.05em;
+    }
+  }

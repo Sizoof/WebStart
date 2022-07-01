@@ -1,0 +1,17 @@
+.catalog__button {
+    width: 100%;
+    height: 7.3rem;
+    background: #F3F4F7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10.8rem;
+}
+
+.catalog__main__button {
+    @include font (600, 1.8rem, 130%);
+    width: 100%;
+    height: 100%;
+}
