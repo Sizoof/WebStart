@@ -15,7 +15,14 @@
   @media (max-width: 48em) {
     .catalog__wrap {
         grid-template-columns: repeat(2, 28.1rem);
+        justify-content: space-around;
+        gap: 5rem 0.8rem;
+        margin-left: -4rem;
     }
+    .catalog__card {
+        width: 139px;
+    }
+
   }
 
   
