@@ -15,3 +15,14 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width: 48em) {
+    .catalog__button {
+        height: 52px;
+    }
+    .catalog__main__button {
+        font-size: 16px;
+        margin-top: 5rem;
+        margin: 0;
+    }
+  }

@@ -1,0 +1,16 @@
+.test-drive {
+    position: relative;
+}
+
+.test-drive__background {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media (max-width: 48em) {
+    .test-drive__background {
+        display: none;
+    } 
+}

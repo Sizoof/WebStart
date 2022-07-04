@@ -1,0 +1,12 @@
+.test-drive__wrap {
+    z-index: 2;
+    display: flex;
+}
+
+@media (max-width: 48em) {
+    .test-drive__wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

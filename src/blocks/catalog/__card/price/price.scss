@@ -6,9 +6,16 @@
 .price__old {
     @include font (700, 2rem, 140%);
     letter-spacing: -0.05em;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
+.red__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @media (max-width: 48em) {
     .price__old {
