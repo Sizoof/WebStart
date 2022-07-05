@@ -1,0 +1,5 @@
+.select__item {
+    @include font (500, 1.6rem, 140%);
+    cursor: pointer;
+    margin-top: 1rem;
+}
