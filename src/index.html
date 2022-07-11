@@ -14,7 +14,7 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="header__burger__mobile">
-                    <img src="img/header/burger_mobile.svg" alt="menu">
+                    <img class="open__menu" src="img/header/burger_mobile.svg" alt="menu">>
                 </div>
                 <div class="header__info">
                     <a href="#" class="header-logo header__logo-wrap">
@@ -30,7 +30,7 @@
                         <img class="header__number-img" src="img/header/Calling.svg" alt="call">
                         <a href="tel:+74952210675" class="header__number-text">+7 495 221-06-75</a>
                     </div>
-                    <button type="button" class="button header__button header__button--color">Заказать звонок</button>
+                    <button type="button" class="button header__button header__button--color button__modal">Заказать звонок</button>
                 </div>
                 <div class="header__menu">
                     <div class="header__navigation">
@@ -43,6 +43,9 @@
                             <a href="#" class="header__link">Отзывы</a>
                             <a href="#" class="header__link">Доставка и оплата</a>
                             <a href="#" class="header__link">Контакты</a>
+                            <hr class="mobile__hr">
+                            <button class="button mobile__menu-button">Заказать звонок</button>
+                            <a class="mobile__phone">+7 495 221-06-75</a>
                         </div>
                     </div>
                     <div class="header__shop">
@@ -247,7 +250,7 @@
                             <h2 class="test-drive__title">Посетите салон и проведите тест-драйв лично</h2>
                         </div>
                         <p class="test-drive__text">У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда рады видеть вас. Дат профессиональную консультацию и поделиться экспертизой</p>
-                        <button class="button test-drive__button">Запись на тест-драйв</button>
+                        <button class="button test-drive__button button__modal">Запись на тест-драйв</button>
                     </div>
                     <div class="test-drive__img">
                         <img class="test-drive-woman__mobile" src="img/test-drive/woman.png" alt="">
@@ -258,6 +261,37 @@
                 <img src="img/test-drive/img__mobile.png" alt="">
             </div>
         </section>
+        <section class="clients">
+            <div class="container">
+                <div class="clients__title">Наши клиенты</div>
+                <div class="clients__logo">
+                    <img class="clients__logo-train" src="img/clients/train.svg" alt="">
+                    <img class="clients__logo-nickel" src="img/clients/nickel.svg" alt="">
+                    <img class="clients__logo-oil" src="img/clients/oil.svg" alt="">
+                    <img class="clients__logo-roscpace" src="img/clients/roscpace.svg" alt="">
+                    <img class="clients__logo-homecredit" src="img/clients/homeCredit.svg" alt="">
+                    <img class="clients__logo-pobeda" src="img/clients/pobeda.svg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
+    <div class="map">
+        <div id="map-element" class="map__element">
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=d34a21ee-f5ff-40fe-abe3-c87cd39cbca8&lang=ru_RU"
+                type="text/javascript">
+            </script>
+        </div>
+    </div>
+    <div class="modal modal__bgc">
+        <div class="modal__wrap">
+            <div class="modal__img-wrap">
+                <img src="img/modal/modal__img.png" alt="done">
+            </div>
+            <div class="modal__text">
+                <h3>Ваша заявка принята</h3>
+                <p>В ближайшее время наш менеджер<br> свяжется с Вами</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

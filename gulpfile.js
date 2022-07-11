@@ -43,7 +43,8 @@ function browsersync() {
       baseDir: baseDir + '/'
     },
     notify: false,
-    online: online
+    online: online,
+    port: 5000
   })
 }
 

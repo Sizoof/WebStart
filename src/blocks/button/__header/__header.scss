@@ -7,8 +7,52 @@
   border-radius: 0.5rem;
 }
 
+.mobile__menu-button {
+  display: none;
+}
+.mobile__phone {
+  display: none;
+}
+
+.cloce__menu {
+  display: none;
+}
+
+.header__burger__mobile {
+  width: 24px;
+  img {
+    object-fit: none;
+  }
+}
+
 @media (max-width: 48em) {
   .header__button {
     display: none;
+  }
+  .mobile__menu-button {
+    display: block;
+    @include font (500, 17px, 140%);
+    width: 188px;
+    height: 51px;
+    background: #F3F4F7;
+    border-radius: .8px;
+    margin: auto;
+    margin-top: 4.1rem;
+    margin-bottom: 10px;
+  }
+  .mobile__phone {
+    display: block;
+    @include font (500, 14px, 140%);
+    text-decoration-line: underline;  
+    color: #0074D4;
+    margin-top: 1rem;
+  }
+
+  .cloce__menu {
+    display: none;
+  }
+
+  .open__menu {
+    display: block;
   }
 }

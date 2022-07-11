@@ -1,0 +1,102 @@
+.clients__logo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+
+.clients__logo-train {
+    width: 10.4rem;
+    height: 5rem;
+}
+.clients__logo-nickel {
+    width: 14.5rem;
+    height: 9.7rem;
+}
+
+.clients__logo-oil {
+    width: 17rem;
+    height: 4.4rem;
+    margin-left: 2rem;
+}
+
+.clients__logo-roscpace {
+    width: 15.1rem;
+    height: 6.3rem;
+    margin-left: 1rem;
+}
+
+.clients__logo-homecredit {
+    width: 12.9rem;
+    height: 6.3rem;
+    margin-left: 2rem;
+}
+
+.clients__logo-pobeda {
+    width: 13.2rem;
+    height: 2.2rem;
+    margin-left: 2.5rem;
+}
+
+
+.clients {
+    margin-bottom: 17.5rem;
+}
+
+.clients__title {
+    @include font (900, 4.4rem, 120%);
+    text-align: center;
+    padding-bottom: 1.7rem;
+}
+
+@media (max-width: 960px) {
+    .clients__logo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 48em) {
+    .clients__logo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .clients__title {
+        @include font (900, 28px, 120%);
+        margin-bottom: 20px;
+    }
+
+    .clients__logo-train {
+        width: 78px;
+        height: 37px;
+        order:1;
+    }
+    .clients__logo-nickel {
+        width: 140px;
+        height: 85px;
+        order:5;
+    }
+    .clients__logo-oil {
+        width: 135px;
+        height: 40px;
+        order:3;
+    }
+    
+    .clients__logo-roscpace {
+        width: 135px;
+        height: 57px;
+        order:4;
+    }
+    
+    .clients__logo-homecredit {
+        width: 100px;
+        height: 50px;
+        order:2;
+    }
+    
+    .clients__logo-pobeda {
+        width: 124px;
+        height: 20px;
+        order:6;
+    }
+  }
+
