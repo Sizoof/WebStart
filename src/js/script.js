@@ -1,4 +1,5 @@
-//select header
+window.addEventListener('DOMContentLoaded', () => {
+    //select header
 const selectHeader = document.querySelector('.select__header');
 const selectBody = document.querySelector('.select__body');
 const selectItem = document.querySelectorAll('.select__item');
@@ -31,10 +32,11 @@ selectItem.forEach((item, i) => {
 let center = [55.62990860032689,37.47329364035973];
 let callCenter = [55.63157101676794,37.39410060789547];
 let stock = [55.63544388883618,37.51955638144859];
+let positin = [55.64272596679536,37.47518191550619]
 
 function init() {
     let map = new ymaps.Map('map-element',{
-        center: center,
+        center: positin,
         zoom: 13
     }, {
         searchControlProvider: 'yandex#search'
@@ -47,7 +49,7 @@ function init() {
         hintContent: ""
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map/Vector.svg',
+        iconImageHref: 'img/map/Vector.svg',
         iconImageSize: [70, 100],
         iconImageOffset: [-30, -100]
     });
@@ -59,7 +61,7 @@ function init() {
         hintContent: ""
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map/Vector.svg',
+        iconImageHref: 'img/map/Vector.svg',
         iconImageSize: [70, 100],
         iconImageOffset: [-36, -100]
     });
@@ -71,7 +73,7 @@ function init() {
         hintContent: ""
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/map/Vector.svg',
+        iconImageHref: 'img/map/Vector.svg',
         iconImageSize: [70, 100],
         iconImageOffset: [-30, -100]
     });
@@ -136,5 +138,160 @@ modal.addEventListener('click', (e) => {
         modal.classList.remove('modal__active')
     }
 })
+
+const swiper = new Swiper('.slider', {
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.slider__pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider__arrow-right',
+      prevEl: '.slider__arrow-left',
+    }
+  });
+
+
+
+  //Form
+
+  const form = document.querySelector('.form__elements');
+
+  const sendForm = (data) => {
+      return fetch('mail.php', {
+          method: 'POST',
+          body: JSON.stringify(data),
+          header: {
+              'Content-type': 'application/json; charset=UTF-8'
+          }
+      }).then(res => res.json())
+  };
+
+  form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const dataForm = new FormData(form);
+      const user = {};
+
+
+      dataForm.forEach((val, key) => {
+          user[key] = val;
+      });
+
+      sendForm(user).then(data => {
+          console.log("Письмо было отправленно!")
+      });
+      form.reset();
+  })
+})
+
+//JQuery 
+const accardion = document.querySelector('.facts__items');
+const tab = document.querySelectorAll('.facts__item');
+const factsOffer = document.querySelectorAll('.facts__offer');
+const plusBtn = document.querySelectorAll('.facts__info-btn-img')
+
+accardion.addEventListener('click', (e) => {
+    const target = e.target.closest('.facts__item');
+    if (target) {
+        tab.forEach((item, i) => {
+            if (item === target) {
+                tab[i].classList.add('facts__item-active');
+                factsOffer[i].style.display = 'block';
+                plusBtn[i].setAttribute('src', 'img/facts/minus.svg');
+
+            } else {
+                tab[i].classList.remove('facts__item-active');
+                factsOffer[i].style.display = 'none';
+                plusBtn[i].setAttribute('src', 'img/facts/plus.svg');
+            }
+        })
+    }
+})
+
+  const pecItem = document.querySelectorAll('.peculiarities__content-item');
+  const pecAcord = document.querySelector('.peculiarities__content');
+
+
+  pecAcord.addEventListener('click', (e) => {
+    const target = e.target.closest('.peculiarities__content-item');
+    if (target) {
+        pecItem.forEach((item, i) => {
+            if (item === target) {
+                pecItem[i].classList.add('peculiarities__content-item-active');
+            } else {
+                pecItem[i].classList.remove('peculiarities__content-item-active');
+            }
+        })
+    }
+})
+
+const sliderMobileItems = document.querySelectorAll('.peculiarities__content-item');
+const sliderLine = document.querySelector('.slider__line');
+
+let count = 0;
+let width;
+
+function init() {
+    if (window.innerWidth <= 780) {
+    width = document.querySelector('.slider__mobile').offsetWidth;
+    sliderLine.style.width = width*sliderMobileItems.length + 'px';
+    sliderMobileItems.forEach((item, i) => {
+        item.style.width = width + 'px';
+    })
+    } else {
+        sliderLine.style.width = "100%";
+        sliderMobileItems.forEach((item, i) => {
+            item.style.width = '38.8rem';
+            sliderLine.style.transform = 'translate(0px)'
+        })
+    }
+}
+
+init();
+
+window.onresize = init;
+
+function rollSlider () {
+    if(window.innerWidth < 780) {
+        sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+    }
+    
+}
+
+
+sliderMobileItems.forEach((item, i) => {
+    item.addEventListener('click', () => {
+    count++;
+    if (count >= sliderMobileItems.length && (window.innerWidth < 780)) {
+        count = 0;
+        rollSlider();
+    } else
+    rollSlider();
+    })
+})    
+
+
+    
+
+    
+
+
+
+    
+
+
+
+
+ 
+
+
+
+
+
 
 

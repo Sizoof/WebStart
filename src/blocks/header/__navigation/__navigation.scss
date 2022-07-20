@@ -9,6 +9,7 @@
 @media (max-width: 48em) {
   .header__navigation {
     display: none;
+    z-index: 101;
   }
 }
 

@@ -13,5 +13,11 @@
 @media (max-width: 48em) {
     .test-drive__background {
         display: none;
+    }
+    .test-drive {
+        margin-bottom: 0;
     } 
+    .test-drive {
+        margin-top: 12rem;
+    }
 }

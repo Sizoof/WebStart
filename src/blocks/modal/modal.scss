@@ -61,3 +61,40 @@
     top: -10rem;
     left: 25rem;
 }
+
+.modal__text {
+    animation-name: animateModal;
+    animation-duration: 1s;
+}
+
+.modal__img-wrap {
+    animation-name: animateDone;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes animateModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateDone {
+    from {
+        margin-top: -40rem;
+        overflow: hidden;
+    }
+    90% {
+        margin-top: 3rem;
+        z-index: 150;
+    }
+
+    to {
+        margin-top: 0rem;
+        z-index: 150;
+    }
+}

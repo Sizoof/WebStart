@@ -1,0 +1,55 @@
+.questions {
+    position: relative;
+    z-index: 100;
+}
+
+.questions__wrapper-desc {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.questions__content {
+    position: absolute;
+    margin-top: -53rem;
+}
+
+
+.questions__heand {
+    position: absolute;
+    width: 55.6rem;
+    height: 70rem;
+    right: 44rem;
+    top: -33rem;
+    img {
+        width: 130%;
+        height: 140%;
+    }
+}
+.questions__wrapper-mobile {
+    display: none;
+}
+
+.lol {
+    position: relative;
+}
+
+@media (max-width: 48em) {
+    .questions__content {
+        position: relative;
+        margin-top: -461px;
+        width: 100%;
+    }
+    .questions__heand {
+        display: none;
+    }
+    .questions__wrapper-desc {
+        display: none;
+    }
+    .questions__wrapper-mobile {
+        display: block;
+        width: 100%;
+        height: 530px;
+        background: url(../img/qustions/BG-mobile.jpg);
+    }
+}

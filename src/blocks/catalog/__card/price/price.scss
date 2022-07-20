@@ -1,3 +1,8 @@
+.catalog__card-price {
+    margin-top: 0.1rem;
+}
+
+
 .price__new {
     @include font (900, 2.8rem, 140%);
     letter-spacing: -0.05em;
@@ -18,6 +23,9 @@
 }
 
 @media (max-width: 48em) {
+    .catalog__card-price {
+        margin-left: -1rem;
+    }
     .price__old {
         letter-spacing: -0.05em;
         @include font (700, 17px, 140%);

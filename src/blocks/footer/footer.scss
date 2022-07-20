@@ -1,0 +1,140 @@
+.footer {
+    margin-top: 43.3rem;
+    background-color: #191E32;
+    height: 25.4rem;
+}
+
+.footer__logo-img {
+    width: 18.4rem;
+    height: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.confidance {
+    @include font (500, 1.4rem, 140%);
+    color: #959AAE;
+    &:not(:last-child) {
+        margin-bottom: .6rem;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    height: 25.4rem;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 7.7rem;
+    padding-bottom: 2rem;
+}
+
+.footer__contacts-img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .9rem;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: .7rem;
+}
+
+.footer__contact-item {
+    display: flex;
+    &:not(last-child) {
+        margin-bottom: 1.7rem;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 7rem; 
+}
+
+.footer__links {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 140%;
+    color: #E7EAEF;
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer__contacts-text-phone {
+    @include font (600, 2rem, 140%);
+    color: #E7EAEF;
+}
+
+.footer__contacts-text-email {
+    @include font (600, 1.7rem , 140%);
+    color: #E7EAEF;
+}
+
+.footer__contacts-text-adress {
+    @include font (600, 1.7rem, 140%);
+    color: #E7EAEF;
+}
+
+.footer__br {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .footer {
+        margin-top: 0;
+        height: 465px;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .footer__logo {
+        margin-top: 10rem;
+    }
+    .footer__logo-img {
+        width: 184px;
+        height: 42px;
+    }
+    .footer__links {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 140%;
+        margin-bottom: 12px !important;
+    }
+    .footer__contacts-img {
+        display: none;
+    }
+    .footer__contacts-text {
+        @include font (400, 15px, 140%);
+    }
+    .footer {
+        position: relative;
+    }
+    .confidance__offer {
+        position: absolute;
+        bottom: 38px;
+    }
+    .confidance {
+        @include font (500, 13px, 140%);
+    }
+    .footer__contact-item {
+        margin-bottom: 15px !important;
+    }
+    .footer__contacts {
+        width: 90%;
+    }
+    .footer__br {
+        display: block;
+    }
+}

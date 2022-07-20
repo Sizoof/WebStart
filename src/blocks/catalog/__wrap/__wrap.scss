@@ -6,6 +6,7 @@
     justify-content: center;
 }
 
+
 @media (max-width: 960px) {
     .catalog__wrap {
         grid-template-columns: repeat(3, 28.1rem);
@@ -24,6 +25,9 @@
     }
     .card__none {
         display: none;
+    }
+    .catalog__title {
+        padding-top: 5rem;
     }
 
   }

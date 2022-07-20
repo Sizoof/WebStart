@@ -1,0 +1,72 @@
+.qustions__inputs {
+    display: flex;
+   input {
+    width: 42.3rem;
+    height: 8.1rem;
+    margin-right: 1.4rem;
+    border-radius: 8px;
+    opacity: 0.8;
+    padding-left: 7rem;
+    color: white;
+    @include font (500, 1.8rem, 140%);
+   }
+   .user__name {
+       background: url(../img/qustions/user.svg);
+       background-repeat: no-repeat;
+       background-color: #576077;
+       background-position: 4rem;
+       background-size: 2.4rem;
+   }
+   .user__name::placeholder {
+       color: white;
+       padding-top: 0.6rem;
+   }
+   .user__phone {
+    background: url(../img/qustions/phone-incoming.svg);
+    background-size: 2.4rem;
+    background-repeat: no-repeat;
+    background-color: #576077;
+    background-position: 4rem;
+   }
+   .user__phone::placeholder {
+    color: white;
+   }
+   button {
+       width: 29.7rem;
+       height: 8.1rem;
+   }
+}
+
+@media (max-width: 48em) {
+    .qustions__inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.8rem;
+        margin-left: 2rem;
+        input {
+            width: 249px;
+            height: 63px;
+            margin-bottom: 13px;
+            padding-left: 53px;
+            font-size: 16px;
+        }
+        button {
+            width: 249px;
+            height: 63px !important;
+            margin-left: -1rem;
+            margin-bottom: -1rem;
+        }
+    }
+    .user__phone::placeholder {
+        @include font(500, 16px, 120%)
+    }
+    .user__name::placeholder {
+        @include font(500, 16px, 120%)
+    }
+    .user__phone, .user__name {
+        background-size: 20px !important;
+        background-position: 25px !important;
+    }
+
+}

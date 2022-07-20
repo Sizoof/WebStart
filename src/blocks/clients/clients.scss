@@ -1,3 +1,8 @@
+.clients {
+    margin-bottom: 17.5rem;
+    margin-top: -1rem;
+}
+
 .clients__logo {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -39,11 +44,6 @@
     margin-left: 2.5rem;
 }
 
-
-.clients {
-    margin-bottom: 17.5rem;
-}
-
 .clients__title {
     @include font (900, 4.4rem, 120%);
     text-align: center;
@@ -57,6 +57,11 @@
   }
 
   @media (max-width: 48em) {
+    .clients {
+        margin-bottom: 8.5rem;
+        padding-bottom: 5px;
+        margin-top: 2rem;
+    }
     .clients__logo {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -69,11 +74,14 @@
         width: 78px;
         height: 37px;
         order:1;
+        margin-left: -4rem;
+        margin-top: -3rem;
     }
     .clients__logo-nickel {
         width: 140px;
         height: 85px;
         order:5;
+        margin-top: -8px;
     }
     .clients__logo-oil {
         width: 135px;
@@ -97,6 +105,7 @@
         width: 124px;
         height: 20px;
         order:6;
+        margin-top: -25px;
     }
   }
 

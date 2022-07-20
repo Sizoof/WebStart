@@ -1,0 +1,77 @@
+.qustions__checkbox {
+    margin-top: 2.3rem;
+}
+
+.checkbox__text {
+    @include font (300, 1.8rem, 140%);
+    color: #576077;
+    display: flex;
+    &:before {
+        content: '';
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        background: #576077;
+        border: 1px solid #6F7487;
+        flex-shrink: 0;
+        cursor: pointer;
+        margin-right: 1.8rem;
+    }
+}
+.checkbox__br {
+    display: none;
+}
+
+.qustions__done {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin-left: -0.1rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding: 0;
+    &:checked+.checkbox__text::before {
+        background: url('../img/qustions/checked.svg');
+        background-repeat: no-repeat;
+        background-size: 2.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        border: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .qustions__checkbox {
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+    }
+    .checkbox__br {
+        display: block;
+    }
+    .checkbox__text {
+        @include font (300, 12px, 91%);
+        margin-left: -50px;
+    }
+    .checkbox__text {
+        margin-top: 5px;
+        &:before {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            margin-left: 8px;
+            top: 0;
+        }
+    }
+    .qustions__done {
+        &:checked+.checkbox__text::before {
+            background: url('../img/qustions/checked.svg');
+            background-repeat: no-repeat;
+            background-size: 20px;
+            width: 22px;
+            height: 22px;
+            border: none;
+        }
+    }
+}

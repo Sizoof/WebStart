@@ -4,12 +4,17 @@
     align-items: center;
     width: 36rem;
 }
+
+.benefits__sale {
+    margin-left: -0.5rem;
+}
+
 .special__conditions {
     margin-right: 2rem;
 }
 
 .free__shipping {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 @media (max-width: 48em) {
@@ -17,5 +22,8 @@
         flex-direction: row;
         align-items:flex-start;
         width: 100%;
+    }
+    .special__conditions {
+        margin-top:1.5rem;
     }
 }

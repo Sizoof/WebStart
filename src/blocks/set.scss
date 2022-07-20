@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+main {
+  margin-top: -6rem;
+}
+
 html,
 body {
   font-size: 0.520835vw;
@@ -16,7 +20,7 @@ body {
   padding: 0;
   color: #2B3350;
   background-color: #FFFFFF;
-  z-index: 99;
+  cursor: default;
 }
 
 input,
@@ -57,7 +61,6 @@ ul {
   }
   .container {
     width: 100%;
-    padding-top: 1.8rem;
     padding-left: 15px;
     padding-right: 15px;
   }
